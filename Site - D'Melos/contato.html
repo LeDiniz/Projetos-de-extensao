@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta name="author" content="Celso, Douglas, Larison, Layo, Letícia e Lilian"> 
+		<meta name="keywords" content="contato, suporte, atendimento ao cliente">
+		<meta name="description" content="Informações de contato da loja">
+    		<meta charset="UTF-8">
+    		<title> D'Melos irmãos da limpeza </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				margin-top: 8%;
+			}
+   			table {
+      				margin: 0 auto;
+				border-collapse: separate;
+      				border-spacing: 30px;
+				font-family: 'Roboto', sans-serif;
+    				}
+
+    			a {
+      				display: block;
+				text-align: center;
+    			   }
+			img {
+  				width: 85%;
+  				height: 80%;
+				font-family: 'Roboto', sans-serif;
+			    }
+			.botao{
+   			 	  border: solid 1px #0000FF;
+    				  border-radius: 20px;
+    				  color: #FFFFFF;
+    				  background-color: #0000FF;
+				  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  				  height: 50px;
+			    }
+			.botao:hover{
+    				background-color: #0000FF;
+    				color: #ffffff;
+    				transform: scale(1.2)
+			   }
+      			form {
+            			max-width: 400px;
+            			margin: 0 auto;
+              		}
+
+      			label {
+            			display: block;
+            			margin-top: 10px;
+				font-family: 'Roboto', sans-serif;
+              		}
+
+      			input[type="text"],
+      			input[type="tel"],
+      			textarea {
+            			width: 100%;
+            			padding: 8px;
+            			border: 1px solid #ccc;
+            			border-radius: 4px;
+              		}	
+
+      			input[type="submit"] {
+            			background-color: #4CAF50;
+            			color: white;
+            			padding: 10px 15px;
+            			border: none;
+            			border-radius: 4px;
+            			cursor: pointer;
+        		}
+
+      			input[type="submit"]:hover {
+            			background-color: #45a049;
+        		}
+  		</style>
+	</head>
+	<body>
+   				<a href="https://www.google.com.br/maps/search/Avenida%20Brasil%20324%20Vila%20Correa%20Ferraz%20de%20Vasconcelos%20SP" target="_blank">
+  					<img src="mapa.png" alt="Mapa do Google">
+				</a>
+				<table>
+ 					 <tr>
+    						<th>Endereço</th>
+    						<th>Contato</th>
+    						<th>Horário de Funcionamento</th>
+  					</tr>
+  					<tr>
+    						<td>Avenida Brasil Nº324, Ferraz de vasconcelos</td>
+    						<td>(11) 96496-1850 </td>
+    						<td>Seg-Sex: 9h às 18h <br> Sábado: 8h ás 14h</td>
+  						</tr>
+				</table>
+			<a href="https://wa.me/message/IDF6LTVSSJAAG1" target="_blank"><button class="botao">Envie seu pedido no nosso WhatsApp!</button></a>
+			<br>
+  		<form action="mailto:rodrigoipg@hotmail.com" method="post" enctype="text/plain">
+  			<label for="nome"> <b> Nome: </b> </label>
+  			<input type="text" id="nome" name="nome" required> <br>
+  			<br>
+  			<label for="telefone"> <b> Telefone: </b> </label>
+  			<input type="tel" id="telefone" name="telefone" required> <br>
+  			<br>
+  			<label for="mensagem"> <b> Mensagem: </b> </label> <br>
+  			<textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+  			<br>
+  			<input type="submit" value="Enviar">
+		</form>
+	</body>
+</html>
